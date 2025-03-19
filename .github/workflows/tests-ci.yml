@@ -1,0 +1,29 @@
+name: Python Playwright tests
+
+on:
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+    jobs:
+        build:
+            runs-on: ubuntu-latest
+    
+            steps:
+                - name: This is a build job
+                  run: echo "This is a build job"
+    
+        tests:
+            runs-on: ubuntu-latest
+    
+            steps:
+                - name: This is a test job
+                  run: echo "This is a test job"
+    
+        deploy:
+            runs-on: ubuntu-latest
+    
+            steps:
+                - name: This is a deploy job
+                  run: echo "This is a deploy job"                  
